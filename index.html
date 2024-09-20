@@ -53,20 +53,29 @@
                 </a>
 
                         <!-- MENU -->
-                <nav>
+                <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href=""> Home </a></li>
-                        <li><a href=""> Sobre </a></li>
-                        <li><a href=""> Serviços </a></li>
-                        <li><a href=""> Departamentos </a></li>
-                        <li><a href=""> Médicos </a></li>
-                        <li><a href=""> Lista de Transplantes </a></li>
-                        <li><a href=""> Contatos </a></li>
-                        <li><a href=""> Mais Opções </a>
+                        <li><a href="#hero" class="active"> Home </a></li>
+                        <li><a href="#sobre"> Sobre </a></li>
+                        <li><a href="#servicos"> Serviços </a></li>
+                        <li><a href="#departamentos"> Departamentos </a></li>
+                        <li><a href="#medicos"> Médicos </a></li>
+                        <li><a href="#lista-de-transplantes"> Lista de Transplantes </a></li>
+                        <li><a href="#contatos"> Contatos </a></li>
+                        <li class="dropdown">
+                            <a href="#">
+                                 <span> Mais Opções </span>
+                                 <i class="bi bi-chevron-down"> </i>
+                            </a>
                             <ul>
-                                <li> Opção 1</li>
-                                <li> Opção 2</li>
-                                <li> Submenu
+                                <li><a href="#"> Opção 1</a></li>
+                                <li><a href="#"> Opção 2</a></li>
+                                
+                                <li class="dropdown">
+                                    <a href="#">
+                                        <span>Submenu</span>
+                                        <i class="bi bi-chevron-down"> </i>
+                                    </a>
                                     <ul>
                                         <li> Submenu 1</li>
                                         <li> Submenu 2</li>
@@ -80,7 +89,7 @@
                         
                     </ul>
 
-                    <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
                 <a href="" class="cta-btn">
                     Entre na lista de transplante
@@ -90,10 +99,30 @@
         </div><!-- fim branding -->
 
     </header>
-    <main>
-        <div>
-            
-        </div>
+    <main class="main">
+
+        <!-- HERO section -->
+         <section id="hero" class="hero section">
+
+            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+                <!-- foto 1 / slide -->
+                 <div class="carousel-item active">
+                    <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+                    <div>
+                        <h2> Bem vindo à Nery's anatomy transplantes</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, cupiditate enim nisi, unde accusantium quia vel aliquam, omnis ut nulla eum vitae laudantium et autem deleniti porro. Tempore, atque quo.
+                        </p>
+                    </div>
+                 </div>
+
+            </div>
+
+         </section>
+        
+
+
 
     </main>
     <footer>
@@ -101,6 +130,8 @@
             Nery's - 11 4619-1649
         </div>
     </footer>
+    <!-- Main- JS -->
+     <script src="javascript/main.js"></script>
 </body>
 
 </html>
