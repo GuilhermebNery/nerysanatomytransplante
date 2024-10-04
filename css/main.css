@@ -11,6 +11,7 @@
     --nav-dropdown-hover-color: #3fbbc0;
     --nav-bg-topbar: #3fbbc0;
     --nav-color2: #ececec;
+    --surface: #8500ad;
 }
 body {
     background: var(--background-color); /* cor fundo */
@@ -301,9 +302,10 @@ a {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 4px solid red;
+  border-top: 4px solid rgb(150, 63, 161);
   z-index: 3;
   margin-bottom: 50px;
+  color: black;
 }
 
 @media (max-width: 1200px) {
@@ -354,6 +356,31 @@ a {
 .hero .carousel-indicators.active{
   opacity:1;
   background: red;
+}
+
+
+/*--------------------------
+# Featured Services Section
+---------------------------*/
+
+.featured-services .service-item {
+  background: #dfdfdf;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-services .service-item .icon {
+  margin-bottom: 10px;
+}
+
+.featured-services .service-item .icon i {
+  color: #3fbbc0;
+  font-size: 36px;
+  transition: ease-in-out 0.3s;
 }
 
 
